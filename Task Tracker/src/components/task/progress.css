@@ -1,0 +1,30 @@
+.circular-progress-wrapper {
+  position: absolute;
+  top: -50%;
+  left: 5px;
+}
+.circular-progress-wrapper h2 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+.circular-progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circular-progress-bar-svg {
+  transform: rotate(-90deg);
+}
+
+.circular-progress-bar-circle {
+  transition: stroke-dashoffset 0.35s;
+  fill: white;
+}
+
+.circular-progress-bar-text {
+  position: absolute;
+  font-size: 1em;
+}

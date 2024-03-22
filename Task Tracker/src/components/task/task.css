@@ -1,0 +1,81 @@
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  padding: 0 20px;
+  border-radius: 20px;
+  position: relative;
+}
+.task .check-and-name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.task .check-and-name input {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.task button {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.task button:hover {
+  animation: animateDeleteButton 0.5s forwards;
+}
+@keyframes animateDeleteButton {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(20deg);
+  }
+  80% {
+    transform: rotate(-20deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.task .taskButtons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.task .taskButtons i {
+  cursor: pointer;
+}
+.task .taskDetails {
+  position: absolute;
+  background-color: white;
+  bottom: 0;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, 100%);
+  width: 80%;
+  animation: animateTaskDetails 0.5s both;
+  padding: 0 10px;
+  border: 2px solid #999;
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+@keyframes animateTaskDetails {
+  0% {
+    transform: translate(-50%, 50%);
+  }
+  100% {
+    transform: translate(-50%, 100%);
+  }
+}
