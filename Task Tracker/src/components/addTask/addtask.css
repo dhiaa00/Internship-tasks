@@ -1,3 +1,10 @@
+.add-task-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
 .add-task {
   display: flex;
   width: 60%;

@@ -25,7 +25,7 @@ const AddTask = ({ tasks, setTasks }) => {
     setAddDetails(false);
   };
   return (
-    <>
+    <div className="add-task-wrapper">
       <div className="add-task">
         {/* input for task name */}
         <input
@@ -77,7 +77,7 @@ const AddTask = ({ tasks, setTasks }) => {
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 
