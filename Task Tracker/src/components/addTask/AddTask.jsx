@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./addtask.css";
 import { storeToLocalStorage } from "../../services/operationsWithLocalStorage";
+import { ReactTyped } from "react-typed";
+import { taskSuggestion } from "../../data/data";
 
 const AddTask = ({ tasks, setTasks }) => {
   const [addDetails, setAddDetails] = useState(false);
@@ -23,16 +25,48 @@ const AddTask = ({ tasks, setTasks }) => {
     setTaskDescription("");
     setTaskColor("#FFFFFF");
     setAddDetails(false);
+    setIsFocused(false);
   };
+
+  // suggestions for tasks
+  const [suggestions, setSuggestions] = useState("");
+  // use react-typed library
+
+  const taskNameInput = useRef(null);
+  const [isFocused, setIsFocused] = useState(false);
+  // function to handle task name change
+  const handleTaskNameChange = (e) => {
+    setTaskName(e.target.value);
+  };
+
+  // suggestion style
+  const suggestionStyle = {
+    display: isFocused ? "none" : "block",
+  };
+
   return (
     <div className="add-task-wrapper">
       <div className="add-task">
+        <div
+          className="suggestions"
+          onClick={() => taskNameInput.current.focus()}
+          style={suggestionStyle}>
+          <ReactTyped
+            strings={taskSuggestion}
+            typeSpeed={70}
+            backSpeed={80}
+            backDelay={500}
+            loop
+          />
+        </div>
         {/* input for task name */}
         <input
           type="text"
-          placeholder="Add a Task"
           value={taskName}
-          onChange={(e) => setTaskName(e.target.value)}
+          onChange={handleTaskNameChange}
+          onFocus={() => setIsFocused(true)}
+          onBlur={() => addDetails ? setIsFocused(false) : setIsFocused(true)}
+          ref={taskNameInput}
         />
         {/* button used for showing details */}
         {addDetails ? (

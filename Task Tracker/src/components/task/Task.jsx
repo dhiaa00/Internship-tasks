@@ -38,7 +38,6 @@ const Task = ({ task, tasks, setTasks }) => {
 
   // determine the color of the text
   const textColorStyle = isColorDark(task.color) ? "white" : "black";
-  console.log(isColorDark(task.color));
 
   // determine the style of the task name based on checked status
   const taskNameStyle = checked ? "line-through" : "none";

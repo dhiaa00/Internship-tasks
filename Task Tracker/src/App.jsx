@@ -25,7 +25,7 @@ function App() {
         {/* progress display */}
         <div className="upper-section">
           <Progress
-            progress={((completedTasks / totalTasks) * 100).toFixed(2)}
+            progress={((completedTasks / totalTasks) * 100 || 0).toFixed(2)}
           />
           <AddTask tasks={tasks} setTasks={setTasks} />
         </div>
