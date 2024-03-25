@@ -29,6 +29,7 @@ body {
   --color2: 255, 32, 78;
   --color3: 100, 220, 255;
   --color-interactive: 198, 151, 73;
+  --color-links: rgb(245, 169, 47);
   --circle-size: 80%;
   --blending: darken;
 }
