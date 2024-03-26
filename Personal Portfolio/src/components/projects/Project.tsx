@@ -8,7 +8,6 @@ interface Project {
 }
 
 const Project = ({ project }: { project: Project }) => {
-  console.log(project);
   return (
     <div className="project">
       <img src={project.img} alt="" />

@@ -4,6 +4,11 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+  }
 }
 .projects-container {
   display: flex;

@@ -1,7 +1,24 @@
 import { useEffect } from "react";
 import "./background.css";
+import { useLocation } from "react-router-dom";
 
-const Background = () => {
+interface BackgroundProps {
+  backgroundDisplay: string;
+  setBackgroundDisplay: React.Dispatch<React.SetStateAction<string>>;
+}
+
+const Background = ({
+  backgroundDisplay,
+  setBackgroundDisplay,
+}: BackgroundProps) => {
+  const location = useLocation();
+  useEffect(() => {
+    if (location.pathname === "/") {
+      setBackgroundDisplay("");
+    } else {
+      setBackgroundDisplay("none");
+    }
+  }, [location]);
   useEffect(() => {
     const interBubble = document.querySelector<HTMLDivElement>(".interactive")!;
     let curX = 0;
@@ -32,7 +49,7 @@ const Background = () => {
   }, []);
 
   return (
-    <div className="gradient-bg">
+    <div className="gradient-bg" style={{ display: backgroundDisplay }}>
       <svg xmlns="http://www.w3.org/2000/svg">
         <defs>
           <filter id="goo">

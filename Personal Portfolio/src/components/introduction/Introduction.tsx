@@ -6,18 +6,15 @@ const Introduction = () => {
     <div className="introduction">
       <h1>Elaziz Dhia eddine</h1>
       <p>
-        I'm a passionate Front-End Developer with a strong foundation in
-        Computer Science (ESTIN Bejaia). I specialize in building web
-        applications using React.js while constantly seeking to expand my
-        knowledge. I'm currently learning in the field of Artificial
-        Intelligence, particularly interested in ML, computer vision, NLP. I'm
-        interested in AI's potential to make a positive impact on the world.
+        Enthusiastic Front-End Developer with a solid foundation in Computer
+        Science. I'm actively exploring the exciting fields of Machine Learning,
+        Computer Vision, and NLP.
       </p>
       <div className="introduction-links">
         <a href="/resume.pdf" download>
-          Resume/CV
+          Download Resume
         </a>
-        <Link to="/projects">Projects</Link>
+        <Link to="/projects">View Projects</Link>
       </div>
     </div>
   );
