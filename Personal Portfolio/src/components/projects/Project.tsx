@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./project.css";
 
 interface Project {
@@ -14,10 +13,6 @@ const Project = ({ project }: { project: Project }) => {
       <div className="description">
         <h2>{project.name}</h2>
         <p>{project.description}</p>
-      </div>
-      <div className="project-links">
-        <a href="">Live</a>
-        <a href="">Github</a>
       </div>
     </div>
   );
