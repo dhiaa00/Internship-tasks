@@ -14,7 +14,10 @@ const Project = ({ project }: { project: Project }) => {
       <div className="description">
         <h2>{project.name}</h2>
         <p>{project.description}</p>
-        <Link to="project">View Project</Link>
+      </div>
+      <div className="project-links">
+        <a href="">Live</a>
+        <a href="">Github</a>
       </div>
     </div>
   );

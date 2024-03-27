@@ -5,33 +5,31 @@ const Projects = () => {
   const projects = [
     {
       img: "/projects/booky.jpg",
+      type: "Front-end",
       name: "Booky",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,",
+        "Web application built with ReactJS, Redux Toolkit, CSS, provides a user-friendly experience for book enthusiasts.",
     },
     {
       img: "/projects/hostelry.png",
+      type: "Front-end",
       name: "Hostelry",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,",
+        "Web application built with ReactJS, Tailwind CSS, and ChartJS to manage hotel bookings and provide valuable insights.",
     },
     {
       img: "/projects/Dubai-safari.jpg",
+      type: "Front-end",
       name: "Dubai Safari",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,",
+        "Web application for showcasing the Dubai safari agency services",
     },
     {
-      img: "/projects/Dubai-safari.jpg",
-      name: "Dubai Safari",
+      img: "/projects/underwrittings.png",
+      type: "Machine Learning",
+      name: "Underwritings Fraud Prediction",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,",
-    },
-    {
-      img: "/projects/Dubai-safari.jpg",
-      name: "Dubai Safari",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet,",
+        "Project that attempts to predict fraud scores using a machine learning approach.",
     },
   ];
   return (
