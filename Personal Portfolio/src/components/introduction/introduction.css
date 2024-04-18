@@ -45,4 +45,22 @@
       }
     }
   }
+  /* responsive styling */
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 80%;
+    }
+    .introduction-links {
+      flex-direction: column;
+      width: 50%;
+      gap: 10px;
+      a {
+        width: 100%;
+      }
+    }
+  }
 }

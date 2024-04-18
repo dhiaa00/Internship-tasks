@@ -59,3 +59,22 @@
     justify-content: flex-start;
   }
 }
+
+/* responsive */
+
+@media screen and (max-width: 768px) {
+  .aboutContainer {
+    padding: 1rem;
+    height: auto;
+  }
+  .about-description {
+    flex-direction: column;
+    gap: 1rem;
+    &::after {
+      display: none;
+    }
+    .side {
+      width: 100%;
+    }
+  }
+}
