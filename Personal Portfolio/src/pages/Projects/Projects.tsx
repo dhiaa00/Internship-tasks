@@ -8,7 +8,8 @@ const Projects = () => {
       type: "Front-end",
       name: "Booky",
       description:
-        "Web application built with ReactJS, Redux Toolkit, CSS, provides a user-friendly experience for book enthusiasts.",
+        "Web application built with ReactJS, Redux Toolkit, CSS, provides a user-friendly experience for book enthusiasts.",  
+      githubL
     },
     {
       img: "/projects/hostelry.png",

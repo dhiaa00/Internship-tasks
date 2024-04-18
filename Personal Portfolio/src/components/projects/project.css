@@ -27,6 +27,15 @@
       font-size: 1.5rem;
       margin-top: 0;
       margin-bottom: 0;
+      position: relative;
+      .link-icon {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 50%;
+        right: 0;
+        transform: translate(-100%, -50%);
+      }
     }
     p {
       font-size: 1rem;
