@@ -15,7 +15,7 @@ const Contact = () => {
           <ul className="infoList">
             <li className="infoItem">
               <FontAwesomeIcon icon={faEnvelope} className="fas" />{" "}
-              d_elaziz@estin.dz
+              dhiaatipaza42@gmail.com
             </li>
             <li className="infoItem">
               <FontAwesomeIcon icon={faPhone} className="fas" /> +213550614284
