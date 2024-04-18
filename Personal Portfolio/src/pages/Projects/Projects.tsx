@@ -8,8 +8,9 @@ const Projects = () => {
       type: "Front-end",
       name: "Booky",
       description:
-        "Web application built with ReactJS, Redux Toolkit, CSS, provides a user-friendly experience for book enthusiasts.",  
-      githubL
+        "Web application built with ReactJS, Redux Toolkit, CSS, provides a user-friendly experience for book enthusiasts.",
+      githubLink: "https://github.com/dhiaa00/book-store",
+      liveWebsite: "https://book-store-chi-one.vercel.app/",
     },
     {
       img: "/projects/hostelry.png",
@@ -17,6 +18,8 @@ const Projects = () => {
       name: "Hostelry",
       description:
         "Web application built with ReactJS, Tailwind CSS, and ChartJS to manage hotel bookings and provide valuable insights.",
+      githubLink: "https://github.com/dhiaa00/Hotel-Management",
+      liveWebsite: "https://hotel-management-jade-tau.vercel.app/",
     },
     {
       img: "/projects/Dubai-safari.jpg",
@@ -24,6 +27,8 @@ const Projects = () => {
       name: "Dubai Safari",
       description:
         "Web application for showcasing the Dubai safari agency services",
+      githubLink: "https://github.com/dhiaa00/Dubai-Desert-Safari",
+      liveWebsite: "https://dubai-desert-safari-tau.vercel.app/",
     },
     {
       img: "/projects/underwrittings.png",
@@ -31,6 +36,7 @@ const Projects = () => {
       name: "Underwritings Fraud Prediction",
       description:
         "Project that attempts to predict fraud scores using a machine learning approach.",
+      githubLink: "https://github.com/dhiaa00/Underwritings-Fraud-Prediction",
     },
   ];
   return (

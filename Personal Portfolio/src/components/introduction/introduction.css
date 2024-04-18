@@ -38,7 +38,7 @@
       padding: 10px 0;
       width: 200px;
       border-radius: 5px;
-      transition: 0.3s;
+      transition: 0.1s;
       &:hover {
         color: white;
         transform: translate(0, -2px);
